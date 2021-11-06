@@ -5,7 +5,7 @@ public class phoneInput {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Please, enter your phone number, start from country code e.g. 380");
+        System.out.println("Please, enter your phone number, start from 380");
 
         long phoneNumber = sc.nextLong();
         String question = "";
