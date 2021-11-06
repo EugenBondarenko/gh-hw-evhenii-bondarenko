@@ -11,15 +11,15 @@ public class phoneInput {
         String question = "";
         String phoneString = String.valueOf(phoneNumber);
 
-        if (phoneString.length() != 12 & phoneString.substring(3).equals("380")) {
+        if (phoneString.length() != 12 & phoneString.substring(3) != ("380")) {
             while (phoneString.length() != 12) {
                 System.out.println("Please, provide correct phone number");
                 phoneString = sc.nextLine();
             }
         }
 
-        else if (phoneString.length() == 12 | phoneString.substring(3).equals("380")) {
-            System.out.println("GJ! Thanks a lot " + phoneNumber);
+        else if (phoneString.length() == 12 | phoneString.substring(3) == ("380")) {
+            System.out.println("GJ! Thanks a lot" + phoneNumber);
         }
 
         int sum = 0;
